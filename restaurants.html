@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Restaurants - LPUEats</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <header>
+        <h1>Our Restaurants</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="restaurants.html">Our Restaurants</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="restaurant-container">
+            <div id="restaurant-list">
+                <div class="restaurant" id="shop1">
+                    <h3>NESCAFE</h3>
+                    <div class="dish-container">
+                        <div class="dish">
+                            <img src="paneerwrap.jpg" alt="Paneer Wrap">
+                            <p>Paneer Wrap - ₹100 <br><button onclick="addToCart('Paneer Wrap', 100)">Add to Cart</button></p>
+                        </div>
+                        <div class="dish">
+                            <img src="cheesefries.jpg" alt="Cheese Fries">
+                            <p>Cheese Fries - ₹90 <br><br><button onclick="addToCart('Cheese Fries', 90)">Add to Cart</button></p>
+                        </div>
+                        <div class="dish">
+                            <img src="kitkat.webp" alt="Kitkat Krusher">
+                            <p>Kitkat Krusher - ₹130 <br><button onclick="addToCart('Kitkat Krusher', 130)">Add to Cart</button></p>
+                        </div>
+                    </div>
+                </div>
+                <br><br><br>
+                <div class="restaurant" id="shop2">
+                    <h3>CHICAGO DELIGHTS</h3>
+                    <div class="dish-container">
+                        <div class="dish">
+                            <img src="paneerpizza.jpg" alt="Paneer Pizza">
+                            <p>Paneer Pizza - ₹99 <br><br><button onclick="addToCart('Paneer Pizza', 99)">Add to Cart</button></p>
+                        </div>
+                        <div class="dish">
+                            <img src="mushroom.jpg" alt="Mushroom Pizza">
+                            <p>Mushroom Pizza - ₹99 <br><button onclick="addToCart('Mushroom Pizza', 99)">Add to Cart</button></p>
+                        </div>
+                        <div class="dish">
+                            <img src="corn.jfif" alt="Corn Pizza">
+                            <p>Corn Pizza - ₹99 <br><br><button onclick="addToCart('Corn Pizza', 99)">Add to Cart</button></p>
+                        </div>
+                    </div>
+                </div>
+                <br><br><br>
+                <div class="restaurant" id="shop3">
+                    <h3>NAND JUICE</h3>
+                    <div class="dish-container">
+                        <div class="dish">
+                            <img src="oreo.jfif" alt="Oreo Shake">
+                            <p>Oreo Shake - ₹70 <br><br><button onclick="addToCart('Oreo Shake', 70)">Add to Cart</button></p>
+                        </div>
+                        <div class="dish">
+                            <img src="butterscotch.jfif" alt="Butterscotch Shake">
+                            <p>Butterscotch Shake - ₹70 <br><button onclick="addToCart('Butterscotch Shake', 70)">Add to Cart</button></p>
+                        </div>
+                        <div class="dish">
+                            <img src="brownie.png" alt="Brownie Shake">
+                            <p>Brownie Shake - ₹70 <br><button onclick="addToCart('Brownie Shake', 70)">Add to Cart</button></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <aside id="cart">
+                <h3>Cart</h3>
+                <ul id="cartItems"></ul>
+                <p id="total">Total: ₹0</p>
+                <button onclick="checkout()">Checkout</button>
+            </aside>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 LPUEats. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
